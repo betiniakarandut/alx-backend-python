@@ -2,7 +2,7 @@
 """3-to_str.py Module"""
 
 
-def to_str(n: float) -> float:
+def to_str(n: float) -> str:
     """function for string repr
 
     Args:
