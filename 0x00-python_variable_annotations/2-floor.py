@@ -4,10 +4,5 @@ import math
 
 
 def floor(n: float) -> float:
-    """
-    Returns floor of float
-
-    Args:
-        n(float): to check
-    """
+    """Returns floor of float."""
     return math.floor(n)
