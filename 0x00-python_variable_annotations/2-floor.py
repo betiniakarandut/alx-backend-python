@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Module to implement 'floor' function"""
+"""Module to implement floor function"""
 import math
 
 
