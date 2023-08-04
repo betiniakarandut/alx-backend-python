@@ -1,4 +1,4 @@
-# #!/usr/bin/env python3
+#!/usr/bin/env python3
 """102-type_checking.py module"""
 from typing import Tuple, List
 
