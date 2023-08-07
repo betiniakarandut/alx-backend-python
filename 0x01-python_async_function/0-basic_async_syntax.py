@@ -12,5 +12,5 @@ async def wait_random(max_delay: float | int = 10) -> float:
     Returns:
         waits for max_delay time and some random floats
     """
-    wait_time = uniform(0, max_delay)
+    wait_time = uniform(0, max_delay + 1)
     return wait_time
