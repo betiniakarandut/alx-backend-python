@@ -1,9 +1,11 @@
-#!/usr/bin/env python3
+# !/usr/bin/env python3
 """0-basic_async_syntax.py module"""
-import random
+import asyncio
+from random import uniform
+import time
 
 
-async def wait_random(max_delay: float | int = 10) -> float:
+async def wait_random(max_delay: int = 10) -> float:
     """Asynchronous task
 
     Arg:
@@ -12,4 +14,6 @@ async def wait_random(max_delay: float | int = 10) -> float:
     Returns:
         waits for max_delay time and some random floats
     """
-    return random.uniform(0, max_delay + 1)
+    wait_time = uniform(0, max_delay)
+    await asyncio.sleep(wait_time)
+    return wait_time
