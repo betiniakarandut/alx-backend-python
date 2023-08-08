@@ -2,10 +2,10 @@
 """0-async_generator.py module"""
 import asyncio
 import random
-from typing import AsyncGenerator
+# from typing import AsyncGenerator
 
 
-async def async_generator() -> AsyncGenerator:
+async def async_generator():
     """Coroutine that loops 10 times
     and yield list of random values
     """
