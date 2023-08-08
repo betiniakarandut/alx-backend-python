@@ -4,7 +4,7 @@ from typing import AsyncGenerator
 async_generator = __import__('0-async_generator').async_generator
 
 
-async def async_comprehension() -> AsyncGenerator:
+async def async_comprehension():
     """Coroutine function
 
     Arg:
@@ -12,7 +12,7 @@ async def async_comprehension() -> AsyncGenerator:
 
     Returns:
         async generator
-    
+
     """
     result = [i async for i in async_generator()]
     return result
