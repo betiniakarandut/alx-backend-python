@@ -5,7 +5,7 @@ import random
 
 
 async def async_generator():
-    """Coroutine function that loops 10 times
+    """Coroutine function that loops 10 times.
 
     Args:
         Takes no arguments
