@@ -12,11 +12,3 @@ async def async_generator() -> AsyncGenerator:
     for i in range(10):
         await asyncio.sleep(1)
         yield (random.uniform(0, 10))
-
-
-# async def print_t():
-#     result = []
-#     async for i in async_generator():
-#         result.append(i)
-#     print(result)
-# asyncio.run(print_t())
