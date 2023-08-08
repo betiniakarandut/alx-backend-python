@@ -2,12 +2,16 @@
 """0-async_generator.py module"""
 import asyncio
 import random
-# from typing import AsyncGenerator
 
 
 async def async_generator():
-    """Coroutine that loops 10 times
-    and yield list of random values
+    """Coroutine function that loops 10 times
+
+    Args:
+        Takes no arguments
+    
+    Returns:
+        and yield list of random values
     """
     for _ in range(10):
         await asyncio.sleep(1)
