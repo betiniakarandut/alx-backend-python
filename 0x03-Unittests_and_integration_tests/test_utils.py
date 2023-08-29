@@ -2,7 +2,7 @@
 """Module for test_utils.py"""
 import unittest
 from parameterized import parameterized
-import utils  # Import the module you're testing
+import utils
 
 
 class TestAccessNestedMap(unittest.TestCase):
@@ -16,3 +16,12 @@ class TestAccessNestedMap(unittest.TestCase):
         """Test case for access_nested_map function"""
         output = utils.access_nested_map(nested_map, path)
         self.assertEqual(output, expected_output)
+
+    @parameterized.expand([
+        ({}, ("a",)),
+        ({"a": 1}, ("a", "b")),
+    ])
+    def test_access_nested_map_exception(self, nested_map, path):
+        """Test case for access_nested_map_exception function"""
+        with self.assertRaises(KeyError):
+            utils.access_nested_map(nested_map, path)
